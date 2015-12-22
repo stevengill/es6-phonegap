@@ -3,9 +3,11 @@
 
 var app = {
     // Application Constructor
+
     initialize: function initialize() {
         this.bindEvents();
     },
+
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
@@ -17,12 +19,14 @@ var app = {
             return _this.onDeviceReady();
         }, false);
     },
+
     // deviceready Event Handler
     //
     // The scope of 'this' is app due to us using arrow functions.
     onDeviceReady: function onDeviceReady() {
         this.receivedEvent('deviceready');
     },
+
     // Update DOM on a Received Event
     receivedEvent: function receivedEvent(id) {
         var parentElement = document.getElementById(id);

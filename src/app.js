@@ -1,23 +1,23 @@
-var app = {
+let app = {
     // Application Constructor
-    initialize: function() {
+    initialize() {
         this.bindEvents();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents() {
         document.addEventListener('deviceready', () => this.onDeviceReady(), false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is app due to us using arrow functions.
-    onDeviceReady: function() {
+    onDeviceReady() {
         this.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
