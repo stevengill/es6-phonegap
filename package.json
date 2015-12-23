@@ -1,6 +1,6 @@
 {
   "name": "es6-phonegap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "template for using browserify, babel and ES6",
   "scripts": {
     "bundle": "browserify src/app.js -t [ babelify --presets [ es2015 ] ] --outfile www/js/bundle.js -v"
